@@ -201,7 +201,11 @@ Below is a consolidated **playbook** you can drop into your repo’s README.md. 
 ```bash
 # 1. SSH into your Linux VM
 # 2. Examine helper script
-cat /tmp/installhugo.sh
+# 3. Run script to download & extract Hugo Extended
+student-00-56d75bd2ad6d@hugo-dev-vm:~$ cat /tmp/installhugo.sh
+_HUGO_VERSION=0.96.0
+curl -L https://github.com/gohugoio/hugo/releases/download/v${_HUGO_VERSION}/hugo_extended_${_HUGO_VERSION}_Linux-64bit.tar.gz | tar -xz -C /tmp/
+# echo The Hugo binary is now at /tmp/hugo.
 
 # 3. Run script to download & extract Hugo Extended
 cd ~
