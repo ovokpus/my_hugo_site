@@ -1,4 +1,10 @@
-## Overview
+# Hugo deployment with Firebase on Google Cloud Platform
+
+---
+
+![image](./img/hugo-deploy-architecture.png)
+
+---
 
 This project demonstrates a fully automated CI/CD pipeline for deploying a **static Hugo site** to **Firebase Hosting** using **Google Cloud Build**. All site content and configuration live in a GitHub repository; on every commit to `master`, Cloud Build:
 
@@ -10,7 +16,7 @@ The result is a zero-touch workflow: no SSH, no manual clicks, and instant, cons
 
 ---
 
-# Hugo & Firebase
+## Hugo & Firebase
 
 Welcome to this tutorial on building a static site with **Hugo** and deploying it to **Firebase Hosting**. We'll cover:
 
